@@ -22,7 +22,7 @@ export class QuoteSources implements OnInit {
   ngOnInit(): void {
     this.sources = this.quoteService.getSources();
     if (this.sources.length > 0) {
-      this.selectedSource = this.sources[0].id; // default to first
+      this.selectedSource = this.sources[0].id;
       this.loadQuotes();
     }
   }
