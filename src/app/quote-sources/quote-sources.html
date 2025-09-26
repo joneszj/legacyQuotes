@@ -1,0 +1,15 @@
+<div class="container mt-5">
+  <h2>Dad’s Quotes</h2>
+
+  <div class="mb-3">
+    <label for="sourceSelect" class="form-label">Select Source</label>
+    <select id="sourceSelect"
+            class="form-select"
+            [(ngModel)]="selectedSource"
+            (change)="loadQuotes()">
+      <option *ngFor="let source of sources" [value]="source.id">{{ source.text }}</option>
+    </select>
+  </div>
+
+  <app-quotes [quotes]="quotes"></app-quotes>
+</div>

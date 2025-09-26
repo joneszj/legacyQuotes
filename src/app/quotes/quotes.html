@@ -1,1 +1,13 @@
-<p>quotes works!</p>
+<div>
+  <input type="text"
+         class="form-control mb-3"
+         placeholder="Search quotes..."
+         [(ngModel)]="searchTerm"
+         (input)="filterQuotes()">
+
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let quote of filteredQuotes">
+      {{ quote.text }}
+    </li>
+  </ul>
+</div>
