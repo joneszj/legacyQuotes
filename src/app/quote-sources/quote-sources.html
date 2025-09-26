@@ -7,7 +7,7 @@
             class="form-select"
             [(ngModel)]="selectedSource"
             (change)="loadQuotes()">
-      <option *ngFor="let source of sources" [value]="source.id">{{ source.text }}</option>
+      <option *ngFor="let source of sources" [ngValue]="source.id">{{ source.text }}</option>
     </select>
   </div>
 

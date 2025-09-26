@@ -15,7 +15,7 @@ export class QuoteService {
   private quotes: Quote[] = [
     { id: 1, text: "Always do your best, no matter how small the task.", sourceId: 1 },
     { id: 2, text: "A smile can change someone’s whole day.", sourceId: 1 },
-    { id: 3, text: "Measure twice, cut once.", sourceId: 1 }
+    { id: 3, text: "Measure twice, cut once.", sourceId: 2 }
   ];
 
   getQuotes(): Quote[] {
