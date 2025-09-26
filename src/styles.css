@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  /* background: linear-gradient(to bottom, #198754, #4b00ff); */
+  font-family: 'Lora', serif;  /* apply your chosen reading font globally */
+  color: #333;
+}
+
+.app-header {
+  background: #fff;              /* clean white card on soft gray bg */
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.header-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;            /* circular image */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.header-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.header-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}

@@ -7,12 +7,13 @@ import { QuoteSource } from '../models/quote.source';
 })
 export class QuoteService {
   private quoteSources: QuoteSource[] = [
+    { id: 0, text: "All", title: "" },
     { id: 1, text: "Brown Book (Vietnam)", title: "2025 March 23rd Vietnam Ho Chi Minh" },
-    { id: 2, text: "A smile can change someone’s whole day." },
-    { id: 3, text: "Measure twice, cut once." }
+    { id: 2, text: "Black Book", title: "Will populate when received back" },
   ];
 
   private quotes: Quote[] = [
+    { text: "Ambition kills loneliness\nWisdom kills anger\nDreams kill fear\nGrowth kills ego\nPease kills jealousy\nConfidence kills doubt", sourceId: 2 },
     { text: "In the end, this world will go under because of the stupidity of people", sourceId: 1 },
     { text: "If you don't know where you're going, any road'll take you there", sourceId: 1 },
     { text: "With every mistake, we must surely be learning", sourceId: 1 },

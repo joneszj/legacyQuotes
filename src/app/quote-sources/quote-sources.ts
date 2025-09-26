@@ -21,15 +21,12 @@ export class QuoteSources implements OnInit {
 
   ngOnInit(): void {
     this.sources = this.quoteService.getSources();
-    if (this.sources.length > 0) {
-      this.selectedSource = this.sources[0].id;
-      this.loadQuotes();
-    }
+    this.loadQuotes();
   }
 
   loadQuotes() {
     this.quotes = this.quoteService
       .getQuotes()
-      .filter(q => q.sourceId === this.selectedSource);
+      .filter(q => this.selectedSource === 0 || q.sourceId === this.selectedSource);
   }
 }

@@ -1,0 +1,26 @@
+.quote-card {
+  background-color: #f8f9fa;   /* light gray background */
+  border-radius: 1rem;         /* rounded corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  position: relative;
+  padding: 2rem;
+}
+
+.quote-card .bi-quote {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  opacity: 0.2;   /* faded so it’s more of a watermark */
+}
+
+.quote-text {
+  font-family: 'Lora', serif;   /* or Inter, sans-serif */
+  font-size: 1.25rem;
+  font-style: italic;
+  margin: 0;
+  padding-top: 1rem;
+  white-space: pre-line;        /* to preserve \n newlines */
+  line-height: 1.5;             /* a little more breathing room between lines */
+  color: #333;                  /* dark but not full black for better readability */
+}
